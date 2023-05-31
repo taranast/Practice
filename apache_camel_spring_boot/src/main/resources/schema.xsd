@@ -1,0 +1,33 @@
+<?xml version = "1.0"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="/jaxb/gen"
+        xmlns:userns="/jaxb/gen"
+        elementFormDefault="qualified">
+
+    <element name="Contact" type="userns:Contact"/>
+    <element name="Response" type="userns:Response"/>
+
+    <complexType name="Contact">
+        <sequence>
+            <element name="contactID" type="int"/>
+            <element name="firstName" type="string"/>
+            <element name="lastName" type="string"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="Response">
+        <sequence>
+            <element name="status">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="SUCCESS"/>
+                        <enumeration value="ERROR"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="message" type="string"/>
+        </sequence>
+    </complexType>
+
+</schema>

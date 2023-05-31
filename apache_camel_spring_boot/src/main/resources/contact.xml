@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gen:Contact xmlns:gen="/jaxb/gen">
+  <gen:contactID>1</gen:contactID>
+  <gen:firstName>Ivan</gen:firstName>
+  <gen:lastName>Ivanov</gen:lastName>
+</gen:Contact>
